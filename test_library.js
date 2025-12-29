@@ -1,4 +1,4 @@
-const { IndicTTS, Language } = require('./dist');
+import { IndicTTS, Language } from './dist/index.js';
 
 // Mock browser globals for Node.js environment
 global.fetch = () => Promise.resolve({ ok: true });

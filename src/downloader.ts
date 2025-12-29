@@ -88,9 +88,23 @@ export class Downloader {
 
     // Helper to construct GitHub Release URL
     getGitHubUrl(repo: string, tag: string, filename: string): string {
-        // e.g., https://github.com/user/repo/releases/download/v1.0.0/file.onnx
-        // Note: Raw GitHub or specific raw requests might be different, but Releases usually standardized.
-        // However, repo usually "owner/repo".
+        // Fallback to raw if release not found? 
+        // User requested "load from github only". 
+        // Since Release v1.0.0 might not exist or have assets yet, we use raw/main link for LFS.
+        // Format: https://github.com/{user}/{repo}/raw/main/models/{filename}
+
+        // Wait, models/ prefix is specific to our repo structure. config should handle specific paths?
+        // In config.ts, 'files.model' is just 'vits_rasa_13.onnx'.
+        // But in the repo it's in 'models/'.
+        // We should adjust config to have relative paths, or handle it here.
+        // Let's assume filename includes path if needed, or we prepend 'models/'?
+        // Actually, config.ts has "model: 'vits_rasa_13.onnx'".
+
+        // Let's use raw link to main branch.
+        // NOTE: 'tag' is ignored here in favor of 'main' branch for now as per user situation.
+        // Ideally we use tag if it matches a valid branch/tag ref.
+        // Use GitHub Releases for large file support and CORS redirection (via S3)
+        // Format: https://github.com/{user}/{repo}/releases/download/{tag}/{filename}
         return `https://github.com/${repo}/releases/download/${tag}/${filename}`;
     }
 }
