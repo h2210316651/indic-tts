@@ -12,14 +12,13 @@ Cloud TTS services (like Azure, Google Cloud, AWS) offer great quality but come 
 
 ### 🥔 Runs on "Potato" Hardware
 We believe access to information shouldn't depend on owning a $2000 laptop. 
-- **Ultra-Low VRAM**: Optimized Int8 Quantized models require roughly **~40MB** of memory.
+- **Ultra-Low VRAM**: Models require roughly **~150MB** of memory.
 - **CPU Fallback**: No GPU? No problem. Our ONNX Runtime backend seamlessly switches to CPU execution if WebGPU is unavailable, ensuring smooth performance on low-end Android phones and older laptops.
 
 ### 🔧 The "One Crest" Optimization Process
 We didn't just wrap existing models; we re-engineered them for the edge of the edge.
 1.  **Selective Pruning**: We analyzed model weights to remove redundant parameters without sacrificing intelligibility.
-2.  **Quantization**: Converted heavy FP32 models to Int8 precision, reducing size by 75% with <1% loss in perceived quality.
-3.  **ONNX Conversion**: Hardened export pipelines to ensure strict compatibility with the ONNX Runtime WebAssembly backend.
+2.  **ONNX Conversion**: Hardened export pipelines to ensure strict compatibility with the ONNX Runtime WebAssembly backend.
 
 ---
 

@@ -84,7 +84,7 @@ export const LANGUAGES: Record<Language, ModelConfig> = {
         repo: "h2210316651/indic-tts",
         releaseTag: "v1.0.0",
         files: {
-            model: "vits_rasa_13_int8.onnx",
+            model: "vits_rasa_13.onnx",
             vocab: "vocab.json"
         },
         speakerId: 2
@@ -94,7 +94,7 @@ export const LANGUAGES: Record<Language, ModelConfig> = {
         repo: "h2210316651/indic-tts",
         releaseTag: "v1.0.0",
         files: {
-            model: "vits_rasa_13_int8.onnx",
+            model: "vits_rasa_13.onnx",
             vocab: "vocab.json"
         },
         speakerId: 19
@@ -104,7 +104,7 @@ export const LANGUAGES: Record<Language, ModelConfig> = {
         repo: "h2210316651/indic-tts",
         releaseTag: "v1.0.0",
         files: {
-            model: "vits_rasa_13_int8.onnx",
+            model: "vits_rasa_13.onnx",
             vocab: "vocab.json"
         },
         speakerId: 18
@@ -114,7 +114,7 @@ export const LANGUAGES: Record<Language, ModelConfig> = {
         repo: "h2210316651/indic-tts",
         releaseTag: "v1.0.0",
         files: {
-            model: "vits_rasa_13_int8.onnx",
+            model: "vits_rasa_13.onnx",
             vocab: "vocab.json"
         },
         speakerId: 12
@@ -124,7 +124,7 @@ export const LANGUAGES: Record<Language, ModelConfig> = {
         repo: "h2210316651/indic-tts",
         releaseTag: "v1.0.0",
         files: {
-            model: "vits_rasa_13_int8.onnx",
+            model: "vits_rasa_13.onnx",
             vocab: "vocab.json"
         },
         speakerId: 8
@@ -134,7 +134,7 @@ export const LANGUAGES: Record<Language, ModelConfig> = {
         repo: "user/indic-tts-assets",
         releaseTag: "v1.0.0",
         files: {
-            model: "vits_rasa_13_int8.onnx",
+            model: "vits_rasa_13.onnx",
             vocab: "vocab.json"
         },
         speakerId: 11
