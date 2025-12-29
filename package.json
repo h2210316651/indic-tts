@@ -1,0 +1,33 @@
+{
+  "name": "indic-tts",
+  "version": "1.0.0",
+  "description": "A feature-rich, publication-ready WebAssembly ONNX TTS library for Indic languages and English.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tts",
+    "text-to-speech",
+    "indic",
+    "onnx",
+    "wasm",
+    "webassembly",
+    "ai",
+    "india"
+  ],
+  "author": "One Crest IT Private Limited <https://onecrest.io>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/h2210316651/indic-tts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "onnxruntime-web": "^1.16.3"
+  }
+}
